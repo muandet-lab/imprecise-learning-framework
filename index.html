@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Imprecise Learning Framework">
+  <meta name="keywords" content="Imprecise Learning, Domain generalisation, OOD generalisation, Credal Sets">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imprecise Learning Framework: Theory and Applications</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://ri-lab.org">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" target="_blank" href="https://arxiv.org/pdf/2410.12921">
+            Credal Two Sample Test
+          </a>
+          <a class="navbar-item" target="_blank" href="http://arxiv.org/pdf/2505.16156">
+            IIPM
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Imprecise Learning Framework<br><em>Theory and Applications</em></h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>UAI 25 Oral Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a target="_blank" href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ICML 24 Spotlight Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://github.com/muandet-lab/Imprecise-Scoring-Rule"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>UAI 25 Code</span>
+                  </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://github.com/muandet-lab/dgil"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>ICML 24 Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/main_teaser.jpg">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Imprecise Learning</span> achieves generalisation across multiple user risk levels!
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In machine learning and forecasting, practitioners often face epistemic uncertainty arising not only from limited data but also from ambiguous deployment conditions and multiple plausible decision-aggregation strategies. We propose a unified perspective that connects the theory of forecast elicitation with robust generalisation: proper scoring rules, which are foundational in eliciting truthful forecasts, define which loss functions are meaningful for training models to approximate underlying distributions. This economic perspective provides a principled foundation for designing learners that remain imprecise when necessary. In particular, we (i) extend generalisation guarantees to settings where learners optimise over a continuum of risk criteria, deferring commitment to a precise criterion until deployment, and (ii) design mechanisms for eliciting imprecise forecasts (credal sets) that integrate the decision-maker’s aggregation rule and use randomized proper scoring to incentivize truthful reporting. This dual perspective establishes a coherent framework: by treating imprecision as a first-class object, learners and forecasters propagate epistemic uncertainty systematically, and operators receive representations of remaining ambiguity aligned with downstream aggregation and decision logic. Theoretical insights and empirical results illustrate the benefits of this approach for both robust domain generalisation and forecast-elicitation tasks, highlighting a principled pathway toward systems that embrace, rather than ignore, uncertainty.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width="1047" height="589" src="https://www.youtube.com/embed/gGPF9dUug2g" title="SIPTA Seminar by Krikamol Muandet: Imprecise generalisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Results</h2>
+        <img src="static/images/cmnist_teaser.jpg">
+        <h2 class="subtitle has-text-centered">
+        <em>Imprecise Learner learns features in context</em>
+        </h2>
+        <img src="static/images/table.png">
+        <img src="static/images/scoring_rule.jpg">
+        <h2 class="subtitle has-text-centered">
+        <em>You can now elicit credal sets with our scoring rule. Check out our <a target="_blank" href="https://arxiv.org/pdf/2011.12948">UAI paper</a>!</em>
+      </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+  @inproceedings{singhtruthful,
+  title={Truthful Elicitation of Imprecise Forecasts},
+  author={Singh, Anurag and Chau, Siu Lun and Muandet, Krikamol},
+  booktitle={The 41st Conference on Uncertainty in Artificial Intelligence},
+  year={2025}
+}
+  @inproceedings{singh2024domain,
+  title={Domain Generalisation via Imprecise Learning},
+  author={Singh, Anurag and Chau, Siu Lun and Bouabid, Shahine and Muandet, Krikamol},
+  booktitle={International Conference on Machine Learning},
+  pages={45544--45570},
+  year={2024},
+  organization={PMLR}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" target="_blank"
+         href="https://arxiv.org/pdf/2404.04669">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" target="_blank" href="https://github.com/muandet-lab" class="external-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
